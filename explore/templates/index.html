@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Explore</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet">   
+</head>
+
+<body>
+    <header class="border bottom py-3">
+        <div class="container">
+            <p class="h4">Explore</p>
+            <p class="text-secondary">Туры выходного дня по красивым местам</p>
+        </div>
+    </header>
+
+    <section class="bg-light py-5 text-center">
+        <div class="container">
+            <img
+                src="static/image/hero.jpg"
+                alt="Горы и домик в горах"
+                class="img-fluid rounded mb-4"
+            >
+            <h1 class="mb-3">Путешествие в сердце природы</h1>
+            <p class="text-secondary">Трёхдневный тур для небольшой группы: мягкие тропы, смотровые площадки и вечера
+                на природе. Гид ведёт в комфортном темпе — опыт походов не нужен, только
+                удобная обувь и желание выдохнуть.</p>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Маршрут на три дня</h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <img
+                       src="/static/image/route-lake.jpg"
+                        alt="Озеро" 
+                        class="img-fluid rounded mb-3"
+                    >
+                    <h3>День 1 — Озеро</h3>
+                    <p class="text-secondary">Прогулка по берегу, знакомство с группой и короткий бриф по маршруту.
+                        Вечером — отдых у воды: чай, тишина и закат над озером.</p>
+                    <a href="{{url_for('tour_detail', slug='lake')}}" class="btn btn-ptimery">
+                        Подробнее
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <img
+                        src="/static/image/route-mountains.jpg"
+                        alt="Горы"
+                        class="img-fluid rounded mb-3"
+                    >
+                    <h3>День 2 — Горы</h3>
+                    <p class="text-secondary">Лёгкий подъём, остановки на смотровых и рассказ гида о тропе.
+                        Пикник на природе с панорамой на долины и спуск до вечера.</p>
+                    <a href="{{url_for('tour_detail', slug='mountains')}}" class="btn btn-ptimery">
+                        Подробнее
+                    </a>   
+                </div>
+
+                <div class="col-md-4">
+                    <img
+                        src="/static/image/route-waterfall.jpg"
+                        alt="Водопад"
+                        class="img-fluid rounded mb-3"
+                    >
+                    <h3>День 3 — Водопад</h3>
+                    <p class="text-secondary">Тропа к водопаду, время на фото и прогулка по лесу. После обеда —
+                        сборы и дорога домой.</p>
+                    <a href="{{url_for('tour_detail', slug='waterfall')}}" class="btn btn-ptimery">
+                    Подробнее
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light py-5 text-center">
+        <div class="container">
+            <h2 class="mb-3">Контакты</h2>
+            <p class="mb-1">+7 (999) 123-45-67 • info@exploretrip.ru</p>
+            <p class="text-secondary">г. Москва, ул. Примерная, 10</p>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="conteiner text-center">
+            <p>© 2026 Explore</p>
+        </div>
+    </footer>
+
+</body>
+</html>
